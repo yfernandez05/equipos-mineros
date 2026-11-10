@@ -1,11 +1,19 @@
 
-#!/bin/bash
+#!/bin/sh
 set -e
 
-PORT="${PORT:-10000}"
+cd /var/www/html
 
-sed -ri "s/Listen 80/Listen ${PORT}/" /etc/apache2/ports.conf
-sed -ri "s/<VirtualHost \*:80>/<VirtualHost *:${PORT}>/" \
-    /etc/apache2/sites-available/000-default.conf
+# Generar APP_KEY si no existe
+if [ -z "$APP_KEY" ]; then
+    php artisan key:generate --force
+fi
 
-exec "$@"
+# Preparar permisos
+chown -R www-data:www-data storage bootstrap/cache
+
+# Ejecutar migraciones
+php artisan migrate --force
+
+# Iniciar Apache
+exec apache2-foreground
