@@ -1,0 +1,42 @@
+.main-layout {
+    min-height: 100vh;
+    background-color: var(--color-bg);
+}
+
+/* Distribución general */
+.layout-body {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 64px);
+}
+
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    min-height: calc(100vh - 64px);
+    padding: 2em;
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+}
+
+/* Contenedor de las vistas */
+.content-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 991.98px) {
+    .main-content {
+        padding: 22px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .main-content {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,42 @@
+.swal2-popup.toast-mining {
+    width: auto !important;
+    min-width: 320px;
+    max-width: 420px;
+    padding: 15px 18px !important;
+    border-radius: 12px !important;
+}
+
+.swal2-popup.toast-mining .swal2-title {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #263D35 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.swal2-popup.toast-mining .swal2-html-container {
+    color: #64756D;
+    font-size: 12px;
+}
+
+.swal2-popup.toast-mining .swal2-icon {
+    margin: 0 12px 0 0 !important;
+    transform: scale(.75);
+}
+
+.swal2-popup.toast-mining .swal2-timer-progress-bar {
+    height: 3px;
+
+    opacity: 1;
+}
+
+@media (max-width: 575.98px) {
+    .swal2-popup.toast-mining {
+        min-width: auto;
+        width: calc(100% - 24px) !important;
+        max-width: 420px;
+        padding: 13px 15px !important;
+    }
+}

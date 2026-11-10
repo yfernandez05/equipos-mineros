@@ -1,0 +1,17 @@
+# Laravel
+/back/.env
+/back/vendor/
+/back/storage/*.key
+/back/bootstrap/cache/*
+
+# Vue
+/vue/.env
+/vue/.env.*
+!/vue/.env.example
+/vue/node_modules/
+/vue/dist/
+
+# Archivos generales
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,178 @@
+.header-modern {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    height: 64px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #E5EBE8;
+}
+
+.header-modern .navbar {
+    height: 100%;
+}
+
+/* Botón del menú */
+.sidebar-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 9px;
+    color: #38564E;
+    background-color: transparent;
+    font-size: 17px;
+    transition: all .2s ease;
+}
+
+.sidebar-toggle:hover {
+    color: #102D2A;
+    background-color: #EFF4F1;
+}
+
+/* Marca */
+.brand-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background-color: #EAF2E8;
+    color: #315C43;
+    font-size: 17px;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.brand-title {
+    color: #183B32;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .6px;
+}
+
+.brand-subtitle {
+    color: #84948D;
+    font-size: 10px;
+}
+
+/* Usuario */
+.user-dropdown {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all .2s ease;
+}
+
+.user-dropdown:hover,
+.user-dropdown:focus {
+    background-color: #F4F7F5;
+    border-color: #E5EBE8;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #EAF2E8;
+    color: #315C43;
+}
+
+.user-name {
+    color: #263D35;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.user-role {
+    color: #89978F;
+    font-size: 10px;
+}
+
+.dropdown-arrow {
+    color: #84948D;
+    font-size: 10px;
+}
+
+/* Menú desplegable */
+.user-menu {
+    min-width: 245px;
+    margin-top: 10px !important;
+    padding: 8px;
+    border: 1px solid #E5EBE8;
+    border-radius: 12px;
+}
+
+.user-menu-header {
+    padding: 14px 10px;
+    text-align: center;
+}
+
+.user-avatar-large {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    font-size: 19px;
+}
+
+.user-menu-header h6 {
+    color: #263D35;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.user-menu-header small {
+    color: #84948D;
+    font-size: 11px;
+}
+
+.logout-option {
+    padding: 10px;
+    border-radius: 7px;
+    color: #C04C4C;
+    font-size: 12px;
+}
+
+.logout-option:hover {
+    color: #A92F2F;
+    background-color: #FFF1F1;
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+    .header-modern .navbar {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .brand-title {
+        font-size: 11px;
+    }
+
+    .brand-subtitle {
+        font-size: 9px;
+    }
+
+    .sidebar-toggle {
+        margin-right: 8px !important;
+    }
+
+    .user-dropdown {
+        padding: 4px;
+    }
+
+    .dropdown-arrow {
+        margin-left: 8px !important;
+    }
+}
