@@ -68,12 +68,10 @@
                                     {{ item.horometro }} horas
                                 </td>
 
-                                <td class="align-middle text-nowrap">
-                                    {{ item.descripcion }}
+                                <td class="align-middle text-nowrap" v-text="item.descripcion">
                                 </td>
 
-                                <td class="align-middle text-nowrap">
-                                    {{ item.created_at }}
+                                <td class="align-middle text-nowrap" v-text="item.fecha_mantenimiento_formateada">
                                 </td>
                             </tr>
 

@@ -6,6 +6,7 @@ use App\Utils\RuleManager;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Carbon\Carbon;
 
 class Mantenimiento extends Model
 {
@@ -40,7 +41,10 @@ class Mantenimiento extends Model
     protected $appends = [
         'isactive',
         'statename',
+        'fecha_mantenimiento_formateada',
+        'created_at_formateado'
     ];
+    
 
     public function getIsactiveAttribute()
     {
@@ -50,6 +54,16 @@ class Mantenimiento extends Model
     public function getStatenameAttribute()
     {
         return RuleManager::getStateName($this->estado);
+    }
+
+    public function getFechaMantenimientoFormateadaAttribute()
+    {
+        return $this->fecha_mantenimiento ? Carbon::parse($this->fecha_mantenimiento)->setTimezone('America/Lima')->format('d/m/Y h:i A') : null;
+    }
+
+   public function getCreatedAtFormateadoAttribute()
+    {
+        return $this->created_at ? Carbon::parse($this->created_at)->setTimezone('America/Lima')->format('d/m/Y h:i A') : null;
     }
 
     // Un mantenimiento pertenece a un equipo
