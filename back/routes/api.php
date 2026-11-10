@@ -2,11 +2,11 @@
 
 use App\Http\Controllers\api\AuthController;
 use App\Http\Controllers\api\CategoryController;
-use App\Http\Controllers\Api\EquipoController;
-use App\Http\Controllers\Api\MantenimientoController;
+use App\Http\Controllers\api\EquipoController;
+use App\Http\Controllers\api\MantenimientoController;
 use App\Http\Controllers\api\ProductController;
 use App\Http\Controllers\api\StockMovementController;
-use App\Http\Controllers\Api\TipoEquipoController;
+use App\Http\Controllers\api\TipoEquipoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

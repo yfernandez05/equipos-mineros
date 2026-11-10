@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\Mantenimiento\StoreMantenimientoRequest;
-use App\Http\Resources\Api\MantenimientoResource;
+use App\Http\Requests\api\Mantenimiento\StoreMantenimientoRequest;
+use App\Http\Resources\api\MantenimientoResource;
 use App\Models\Mantenimiento;
 use App\Services\MantenimientoService;
 use Illuminate\Http\JsonResponse;

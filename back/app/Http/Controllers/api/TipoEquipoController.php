@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\TipoEquipo\StoreTipoEquipoRequest;
-use App\Http\Requests\Api\TipoEquipo\UpdateTipoEquipoRequest;
-use App\Http\Resources\Api\TipoEquipoResource;
+use App\Http\Requests\api\TipoEquipo\StoreTipoEquipoRequest;
+use App\Http\Requests\api\TipoEquipo\UpdateTipoEquipoRequest;
+use App\Http\Resources\api\TipoEquipoResource;
 use App\Models\TipoEquipo;
 use App\Services\TipoEquipoService;
 use App\Utils\RuleManager;

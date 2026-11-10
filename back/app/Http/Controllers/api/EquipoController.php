@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Api\Equipo\StoreEquipoRequest;
-use App\Http\Requests\Api\Equipo\UpdateEquipoRequest;
-use App\Http\Resources\Api\EquipoResource;
+use App\Http\Requests\api\Equipo\StoreEquipoRequest;
+use App\Http\Requests\api\Equipo\UpdateEquipoRequest;
+use App\Http\Resources\api\EquipoResource;
 use App\Models\Equipo;
 use App\Services\EquipoService;
 use App\Utils\RuleManager;
