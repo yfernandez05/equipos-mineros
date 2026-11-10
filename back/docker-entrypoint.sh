@@ -3,9 +3,10 @@ set -e
 
 cd /var/www/html
 
-# Generar APP_KEY si no existe
+# Verificar que APP_KEY este configurada
 if [ -z "$APP_KEY" ]; then
-    php artisan key:generate --force
+    echo "ERROR: La variable APP_KEY no está configurada."
+    exit 1
 fi
 
 # Preparar permisos
